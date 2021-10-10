@@ -1,0 +1,41 @@
+{
+  "name": "registrationserviceassignment",
+  "description": "registrationService - Assignment 4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "start-dev": "nodemon -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatanelWeizman-healthy/registrationServiceAssignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatanelWeizman-healthy/registrationServiceAssignment/issues"
+  },
+  "dependencies": {
+    "@ownhealthil/db": "^1.1.0",
+    "@ownhealthil/logger": "^2.6.4",
+    "@ownhealthil/messenger": "^5.7.3",
+    "@ownhealthil/middleware": "^2.4.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "joi": "^17.4.2",
+    "joi-phone-number": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash.pick": "^4.4.0",
+    "morgan": "^1.10.0"
+  },
+  "homepage": "https://github.com/MatanelWeizman-healthy/registrationServiceAssignment#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

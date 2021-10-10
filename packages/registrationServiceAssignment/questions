@@ -1,0 +1,2 @@
+* not returned 401 error on unAuthorizeError, there are packages the in default throw with next(error) and they dont have 'statusCode'
+    field and because that the user get 500.

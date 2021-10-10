@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  rabbitmq3:
+    image: rabbitmq:3.8-management-alpine
+    ports:
+      - '15672:15672'
+  database:
+    image: "postgres"
+    env_file:
+      - database.env
+    ports:
+      - '5432:5432'
+  registration-service:
+    restart: on-failure
+    env_file:
+      - ./packages/registrationServiceAssignment/.env
+    build: ./packages/registrationServiceAssignment/.
+    ports:
+      - '3000:3000'
+  messages-service:
+    restart: on-failure
+    env_file:
+      - ./packages/messagesService/.env
+    build: ./packages/messagesService/.
+  email-worker:
+    restart: on-failure
+    env_file: 
+      - ./packages/emailWorker/.env
+    build: ./packages/emailWorker/
+  

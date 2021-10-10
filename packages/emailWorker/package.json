@@ -1,0 +1,28 @@
+{
+  "name": "emailworker",
+  "version": "1.0.0",
+  "description": "send email by SendGrid API - assignment 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "start-dev": "nodemon -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatanelWeizman-healthy/emailWorker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatanelWeizman-healthy/emailWorker/issues"
+  },
+  "homepage": "https://github.com/MatanelWeizman-healthy/emailWorker#readme",
+  "dependencies": {
+    "@ownhealthil/logger": "^2.6.4",
+    "@ownhealthil/messenger": "^5.7.3",
+    "@sendgrid/mail": "^7.4.7",
+    "dotenv": "^10.0.0"
+  }
+}
